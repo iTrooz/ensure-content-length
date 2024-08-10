@@ -1,4 +1,4 @@
-module gzip-content-length
+module ensure-content-length
 
 go 1.22.6
 
