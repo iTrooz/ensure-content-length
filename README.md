@@ -7,8 +7,11 @@ Content-Length may not be set in a number of cases, including in most web server
 # How to run
 Build:
 `go build -o ensure-content-length`
+
 Run:
-`./ensure-content-length 8080 https://example.com` will make our proxy webserver run on port 8080, and proxy its requests to https://example.com. For example, http://localhost:8080/my/file will become https://example.com/my/file
+`./ensure-content-length 8080 https://example.com`
+
+This will make our proxy webserver run on port 8080, and proxy its requests to https://example.com. For example, http://localhost:8080/my/file will become https://example.com/my/file
 
 # Notes
 According to https://stackoverflow.com/questions/3819280/content-length-when-using-http-compression, `Content-Length` is the length of the *compressed* content. Not everyone seems to agree though
