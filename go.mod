@@ -1,4 +1,4 @@
-module ensure-content-length
+module github.com/iTrooz/ensure-content-length
 
 go 1.22.6
 
